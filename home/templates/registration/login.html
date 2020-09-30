@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <form method="GET" action="{% url 'login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </form>
+    </body>
+</html>
